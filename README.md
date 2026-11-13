@@ -8,7 +8,7 @@ It pulls candidates from free public sources into one SQLite file, logs every ne
 
 ## How this was built
 
-I set the goal and scope, chose the sources, and made the scope decisions (which regions and organisation types reach the board, what is out of scope). The code was written by Claude, an AI coding assistant, and tested by it before delivery; I ran every script on my own machine and reported failures back. I am a microbiologist, not a software developer, so the workflows are built around running files rather than writing code.
+I set the goal and scope, chose the sources, and made the scope decisions (which regions and organisation types reach the board, what is out of scope). The code was written by Claude, an AI coding assistant, and tested by it before delivery; I ran every script on my own machine and reported failures back. As a microbiologist, the workflows are built around running files rather than writing code.
 
 The pipeline itself contains no AI. Selection is rule-based (keyword filters and registry rules), and scoring is done by hand.
 
@@ -16,8 +16,7 @@ The pipeline itself contains no AI. Selection is rule-based (keyword filters and
 
 The usual sources for AMR innovation lean heavily Western:
 
-- ClinicalTrials.gov mostly captures non-US trials when sponsors need the FDA or a journal; many domestic trials in China, India and Japan are registered only nationally.
-- In the WHO 2025 preclinical antibacterial pipeline, 219 of 232 products come from high-income countries, and none come from a Chinese developer.
+ClinicalTrials.gov mostly captures non-US trials when sponsors need the FDA or a journal; many domestic trials in China, India and Japan are registered only nationally.
 
 This project adds national registries (through the WHO trial registry platform) and regional start-up lists, and flags candidates from underreported regions so they are not lost in the ranking.
 
